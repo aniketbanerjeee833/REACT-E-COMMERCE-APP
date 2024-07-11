@@ -1,0 +1,64 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-container
+{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height:500px;
+    width:46rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+}
+.image-four-rows
+
+{
+ 
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+
+    height: 500px;
+    width:200px;
+  place-items: center;
+}
+
+figure
+{
+    border: 1px solid black;
+    width:150px;
+    height:100px;
+
+    & .box-images
+    {
+        width:150px;
+        height:100px;
+        border: 1px solid white;
+
+        &:hover
+        {
+            cursor: pointer;
+        }
+    }
+}
+
+.main-image-container
+{
+    border: 1px solid black;
+    height:250px;
+    width:400px;
+
+    & .main-image
+    {
+        height:250px;
+        width:400px;
+       
+        border: 1px solid white;
+    }
+}

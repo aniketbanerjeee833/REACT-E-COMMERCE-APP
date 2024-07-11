@@ -1,0 +1,65 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-hero {
+    width: 95rem;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding-top: 20px;
+    height:300px;
+  }
+
+  .grid {
+    display: grid;
+    gap: 3rem;
+    padding-left: 10rem;
+  }
+  
+  .grid-two-cols {
+    grid-template-columns: repeat(2, 1fr);
+  
+  }
+
+  .hero-section-data
+  {
+    border: 1px solid black;
+    width:25rem;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 20px;
+  }
+
+  .hero-section-image
+  {
+    border: 1px solid white;
+    width:25rem;
+    height:150px;
+
+  }
+
+  .hero-image
+  {
+    width:25rem;
+    border: 1px solid black;
+    height:150px;
+
+  }
+
+  .shop-now
+  {
+    background-color: blue;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    &:hover
+    {
+        cursor: pointer;
+    }
+  }

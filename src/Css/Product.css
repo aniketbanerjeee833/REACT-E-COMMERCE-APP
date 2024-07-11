@@ -1,0 +1,349 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.product-container
+{
+    border:1px solid black;
+    width:95rem;
+    height:1000px;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+
+.product-view-container
+{
+    border:1px solid black;
+    height:1000px;
+
+    & .sort-products
+    {
+        height:100px
+    }
+
+
+}
+
+
+.main-products
+{
+    border:1px solid black;
+ 
+    height: 900px;
+
+}
+
+.grid-view-three-cols
+{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap:10px;
+}
+.grid-card-data-link
+{
+    border:5px solid whitesmoke;
+    width:230px;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.grid-card-data
+{
+    border:1px solid whitesmoke;
+    width:200px;
+    height:150px;
+    
+
+& figure
+{
+    width:200px;
+    height:150px;
+   
+
+    & figcaption
+    {
+        border: 2px solid black;
+        position: relative;
+     
+        bottom: 150px;
+        left: 120px;
+        width:80px;
+        height:20px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background-color: white;
+    }
+    & img
+    {
+        width:200px;
+        height:150px;  
+    }
+}
+}
+
+.grid-card-info
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-view-two-cols
+{
+ 
+    grid-template-columns: repeat(2,1fr);
+    /* grid-template-rows: repeat(4,1fr); */
+    gap:10px;
+    height: 900px;
+}
+
+ .list-card-data
+{
+    border:1px solid black;
+    display:grid;
+    height:250px;
+    grid-template-columns:0.3fr 1fr;
+padding: 10px;
+} 
+.list-card-image
+{
+    border:1px solid whitesmoke;
+    width:200px;
+    height:150px;
+    
+
+& figure
+{
+    width:200px;
+    height:150px;
+   
+
+    & figcaption
+    {
+        border: 2px solid black;
+        position: relative;
+     
+        bottom: 150px;
+        left: 120px;
+        width:80px;
+        height:20px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background-color: white;
+    }
+    & img
+    {
+        width:200px;
+        height:150px;  
+    }
+}
+}
+
+.list-card-info
+{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.btn
+{
+    margin: 2rem 0;
+    background-color: rgb(0 0 0 / 0%);
+    border: 0.1rem solid rgb(98 84 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(98 84 243);
+
+    &:hover
+    {
+        cursor: pointer;
+    }
+}
+
+
+/*SORT COMPONENT*/
+.sort-products
+{
+    border:1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+
+    & .grid-buttons
+    {
+        
+        width:50px;
+        display: flex;
+        justify-content: space-between;
+
+       
+
+
+        & .grid-icons
+        {
+           
+            cursor: pointer;
+        }
+
+    }
+}
+
+.active-grid
+{
+    background-color: black;
+    color: white;
+}
+
+.sort-select-style
+{
+    border: 1px solid black;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+
+/*FILTER SECTION*/
+
+.filter-products
+{
+    border: 1px solid black;
+    padding-top: 40px;
+}
+.filter-search
+{
+    border: 1px solid black; 
+    
+}
+
+.filter-category
+{
+    border: 1px solid black;   
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top: 30px;
+
+    & .category-buttons
+    {
+        width:80px;
+        background-color: white;
+        display: flex;
+        align-items: start;
+        cursor: pointer;
+        border: 1px solid black;
+
+       
+      
+    }
+
+}
+
+.activeCat{
+   font-size: 1rem;
+   color: red;
+}
+.filter-company
+{
+    border: 1px solid black;  
+    margin-top: 30px;
+    gap:10px;
+
+    & h3
+    {
+        border: 1px solid black;
+      
+    }
+
+    & .filter-company
+    {
+        border: 2px solid black;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+}
+
+
+.filter-colors
+{
+    border: 1px solid black;
+    height:60px;
+    padding-top:10px;
+}
+.filter-color-style
+{
+    border: 1px solid black;
+    display: flex;
+    justify-content: start;
+    gap:5px;
+
+}
+
+.color-all
+{
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.btnStyle
+{
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    opacity:1;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.active
+{
+    opacity: 1;
+}
+.checkstyle
+{
+    color: white;
+    height:10px;
+    width: 10px;
+}
+.filter-buttons
+{
+    border: 1px solid black;
+    height:50px;
+    padding-top:10px;
+
+    & .clear-filter
+    {
+        background-color: red;
+        color: black;
+        border:1px solid red;
+        width:100px;
+        height:30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    
+    }
+}
+
+
+

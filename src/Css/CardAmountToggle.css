@@ -1,0 +1,39 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.product-amount-container
+{
+   
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    margin-top: 10px;
+
+    p
+    {
+        text-align: center;
+        padding: 0px;
+    }
+
+    & .product-amount-button
+    {
+       
+        width:20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color:whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover
+        {
+                cursor: pointer;
+        }
+
+    }
+}

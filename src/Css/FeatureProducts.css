@@ -1,0 +1,80 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-feature
+{
+    border:1px solid black;
+    height:400px;
+    background-color: whitesmoke;
+    width:95rem;
+}
+.feature-data
+{
+    padding-left: 150px;
+}
+.card-section
+{
+    border:1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    height:300px;
+    
+}
+
+.card-data-link
+{
+    border:6px solid white;
+    width:230px;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.card-data
+{
+    border:1px solid white;
+    width:200px;
+    height:150px;
+
+& figure
+{
+    width:200px;
+    height:150px;
+   
+
+    & figcaption
+    {
+        border: 2px solid black;
+        position: relative;
+     
+        bottom: 150px;
+        left: 120px;
+        width:80px;
+        height:20px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background-color: white;
+    }
+    & img
+    {
+        width:200px;
+        height:150px;  
+    }
+}
+}
+
+.card-info
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

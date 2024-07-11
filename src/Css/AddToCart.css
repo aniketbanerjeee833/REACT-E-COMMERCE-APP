@@ -1,0 +1,53 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.colors
+{
+   margin-top: 10px;
+
+    & p
+    {
+        display: flex;
+        gap:10px;
+     
+        width:150px;
+        padding-left: 0px;
+    }
+}
+
+.colors-btn
+{
+  
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    opacity: 0.5;
+     
+    &:hover
+    {
+        cursor: pointer;
+    }
+
+
+}
+.active
+{
+    opacity: 1;
+}
+
+.tick
+{
+    color:white;
+    width:10px;
+    height:10px;
+}
+
+
+
+
+
+

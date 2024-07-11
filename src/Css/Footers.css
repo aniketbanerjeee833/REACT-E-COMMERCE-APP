@@ -1,0 +1,169 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-contact--homepage
+{
+    border:1px solid black;
+    width:95rem;
+    margin: 0 auto;
+  
+}
+
+.contact-two--cols
+{
+    border:1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width:600px;
+    height:120px;
+   padding:20px 15px 0px 15px;
+   background-color: whitesmoke;
+   margin: 0 auto;
+  
+
+}
+
+.btn
+{
+   
+
+    background-color: blue;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    height:40px;
+
+    &:hover
+    {
+        cursor: pointer;
+    }
+
+}
+
+footer
+{
+    background-color: black;
+    border:1px solid white;
+    width:95rem;
+}
+
+
+.footer-four-cols
+{
+    border:1px solid black;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+    padding-right: 50px;
+}
+
+
+.footer-about
+{
+    border: 1px solid white;
+    height:150px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding:10px 20px 0px 20px;
+    & h2
+    {
+        color:white
+    }
+
+    & p
+    {
+        color:white
+    }
+}
+.footer-subscribe
+{
+    border: 1px solid white;
+    height:250px;
+   
+    padding:10px 20px 0px 20px;
+
+
+    & form
+    {
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+    & .footer-subs--para
+    {
+        color:white
+    }
+
+    & .subscribe
+    {
+        background-color: blueviolet;
+        color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100px;
+        height:40px;
+    }
+}
+.footer-social
+{
+    border:1px solid white;
+    height:150px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding:10px 20px 0px 20px;
+
+    & h3
+    {
+
+        color:white;
+
+    }
+
+   & .icons
+{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+}
+
+.all-icons
+{
+    display: flex; 
+    gap:10px;
+}
+.footer-contact
+{
+    border:1px solid white; 
+    height:150px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding:10px 20px 0px 20px;
+
+
+    & .footer-contact--para
+    {
+        color:white
+    }
+
+    & .phone-number
+    {
+        color:white
+    }
+}
